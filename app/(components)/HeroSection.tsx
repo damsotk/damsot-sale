@@ -3,7 +3,7 @@ import styles from '../(styles)/hero-section.module.css'
 export default function HeroSection() {
 
     return (
-        <div className={styles.section}>
+        <div>
             <div className={styles.textSection}>
                 <div className={styles.bigText}>DENYS PIYACK</div>
                 <div className={styles.mediumText}>FRONTEND DEVELOPER</div>

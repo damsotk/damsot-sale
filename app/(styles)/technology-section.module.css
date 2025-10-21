@@ -1,0 +1,40 @@
+.cardTechnologiesSection {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: red; */
+}
+
+.cardTechnology {
+    width: 110px;
+    height: 110px;
+    padding: 20px;
+    border: 1px solid #9BD0D3;
+    border-radius: 35;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.technologyName, .technologyDuration {
+    color: #9BD0D3;
+    font-weight: bolder;
+    font-family: "Orbitron", sans-serif;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.paginationButton, .paginationButtonActive {
+    background-color: #2C393A;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.paginationButtonActive {
+    background-color: #9BD0D3;
+}
