@@ -1,0 +1,14 @@
+
+.headerFlex {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+.headerButton {
+    color: #FFFFFF;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
