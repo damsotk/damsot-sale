@@ -10,3 +10,26 @@ export const technologies = [
     { name: 'Express', duration: '1 year' },
     { name: 'MySQL', duration: '2 years' },
 ]
+
+export interface HistoryItem {
+  year: string
+  months: {
+    [month: string]: string[]
+  }
+}
+export const history: HistoryItem[] = [
+  {
+    year: "2024",
+    months: {
+      april: ["Next.js"],
+      july: ["End on Upwork", "Start work with clients"],
+    },
+  },
+  {
+    year: "2025",
+    months: {
+      january: ["Started portfolio website"],
+      may: ["Work with clients"],
+    },
+  },
+]

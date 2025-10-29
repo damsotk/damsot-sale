@@ -1,0 +1,81 @@
+.pathFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pathCard {
+    display: flex;
+    border: 1px solid #9BD0D3;
+    padding: 20px;
+    color: #FFFFFF;
+    width: 55%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.pathYear {
+    font-family: "Orbitron", sans-serif;
+    font-size: 25px;
+    margin-right: 40px;
+}
+
+.pathMonth {
+    display: flex;
+    font-family: "Orbitron", sans-serif;
+    gap: 50px;
+    font-size: 13px;
+}
+
+.pathMonthInfo {
+    position: relative;
+    margin-top: 13px;
+}
+
+.line {
+    border-top: 2px solid #9BD0D3;
+    width: 60%;
+    position: absolute;
+    top: 55px;
+}
+
+.pathCircle {
+    border-radius: 100%;
+    background-color: #005C71;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 18px;
+    z-index: 1;
+}
+
+.pathAchivments {
+    margin-top: 15px;
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+}
+
+.pathMonthName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.paginationButton, .paginationButtonActive {
+    background-color: #2C393A;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.paginationButtonActive {
+    background-color: #9BD0D3;
+}
