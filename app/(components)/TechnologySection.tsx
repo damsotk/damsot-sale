@@ -1,8 +1,8 @@
 'use client'
 import usePagination from '../(hooks)/usePagination'
 import styles from '../(styles)/technology-section.module.css'
-import { technologies } from '@/data/pagination-data'
-
+import React from 'react'
+import { technologies, icons } from '@/data/pagination-data'
 export default function TechnologySection() {
     const { page, visibleItems, goToPage } = usePagination(technologies, 5)
 
@@ -12,6 +12,9 @@ export default function TechnologySection() {
             <div className={styles.cardTechnologiesSection}>
                 {visibleItems.map((tech, index) => (
                     <div key={index} className={styles.cardTechnology}>
+                        <div className={styles.technologyIcon}>
+                            {icons[tech.icon] && React.createElement(icons[tech.icon], { size: 200, color: '#9BD0D3' })}
+                        </div>
                         <div className={styles.technologyName}>{tech.name}</div>
                         <div className={styles.technologyDuration}>{tech.duration}</div>
                     </div>

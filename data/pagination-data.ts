@@ -1,14 +1,41 @@
-export const technologies = [
-    { name: 'React', duration: '2 years' },
-    { name: 'Next.js', duration: '6 months' },
-    { name: 'JavaScript', duration: '3 years' },
-    { name: 'TypeScript', duration: '2 years' },
-    { name: 'SQL', duration: '2 years' },
-    { name: 'HTML', duration: '4 years' },
-    { name: 'CSS', duration: '4 years' },
-    { name: 'Node.js', duration: '1 year' },
-    { name: 'Express', duration: '1 year' },
-    { name: 'MySQL', duration: '2 years' },
+import {
+  SiJavascript, SiReact, SiTypescript, SiNextdotjs, SiMysql, SiHtml5,
+  SiCss3, SiNodedotjs, SiExpress
+} from 'react-icons/si'
+import { FaDatabase } from 'react-icons/fa'
+
+export const icons = {
+  javascript: SiJavascript,
+  react: SiReact,
+  typescript: SiTypescript,
+  nextjs: SiNextdotjs,
+  sql: FaDatabase,
+  html: SiHtml5,
+  css: SiCss3,
+  nodejs: SiNodedotjs,
+  express: SiExpress,
+  mysql: SiMysql,
+} as const
+
+export type IconKey = keyof typeof icons
+
+export interface Technology {
+  name: string
+  duration: string
+  icon: IconKey
+}
+
+export const technologies: Technology[] = [
+  { name: 'React', duration: '2 years', icon: 'react' },
+  { name: 'Next.js', duration: '6 months', icon: 'nextjs' },
+  { name: 'JavaScript', duration: '3 years', icon: 'javascript' },
+  { name: 'TypeScript', duration: '2 years', icon: 'typescript' },
+  { name: 'SQL', duration: '2 years', icon: 'sql' },
+  { name: 'HTML', duration: '4 years', icon: 'html' },
+  { name: 'CSS', duration: '4 years', icon: 'css' },
+  { name: 'Node.js', duration: '1 year', icon: 'nodejs' },
+  { name: 'Express', duration: '1 year', icon: 'express' },
+  { name: 'MySQL', duration: '2 years', icon: 'mysql' },
 ]
 
 export interface HistoryItem {
@@ -19,10 +46,11 @@ export interface HistoryItem {
 }
 export const history: HistoryItem[] = [
   {
-    year: "2024",
+    year: "2022",
     months: {
-      april: ["Next.js"],
-      july: ["End on Upwork", "Start work with clients"],
+      july: ["JavaScript"],
+      october: ["HTML&CSS", "IT STEP Courses"],
+      December: ["JavaScript", "Advanced"],
     },
   },
   {

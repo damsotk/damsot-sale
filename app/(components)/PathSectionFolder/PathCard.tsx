@@ -19,7 +19,7 @@ export default function PathCard({ data }: PathCardProps) {
                         </div>
                         <div className={styles.pathAchivments}>
                             {events.map((e, i) => (
-                                <div>
+                                <div key={i}>
                                     {e}
                                 </div>
                             ))}
