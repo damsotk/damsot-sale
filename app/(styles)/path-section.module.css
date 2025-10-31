@@ -1,15 +1,24 @@
-.pathFlex {
+.pathSection {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 150px;
+}
+
+.pathText {
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: "Orbitron", sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 50px;
 }
 
 .pathCard {
     display: flex;
     border: 1px solid #9BD0D3;
-    padding: 20px;
     color: #FFFFFF;
-    width: 55%;
+    width: 100%;
+    padding: 20px;
     border-radius: 20px;
     position: relative;
 }
@@ -69,13 +78,16 @@
     justify-content: center;
     gap: 10px;
 }
-.paginationButton, .paginationButtonActive {
+
+.paginationButton,
+.paginationButtonActive {
     background-color: #2C393A;
     width: 15px;
     height: 15px;
     border-radius: 100%;
     margin-top: 20px;
 }
+
 .paginationButtonActive {
     background-color: #9BD0D3;
 }

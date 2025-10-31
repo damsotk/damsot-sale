@@ -1,4 +1,3 @@
-
 .textSection {
   position: relative;
   display: flex;
@@ -6,8 +5,6 @@
   align-items: center;
   flex-direction: column;
   margin-top: 30vh;
-  margin-left: 240px;
-  margin-right: 240px;
 }
 
 .textSection::after,
@@ -33,15 +30,18 @@
 .bigText {
   font-family: "BBH Sans Bartle", sans-serif;
   color: #FFFFFF;
-  font-size: 65px;
+  font-size: clamp(45px, 4.2vw, 65px);
+  text-align: center;
 }
 
 .mediumText {
   font-family: "BBH Sans Bartle", sans-serif;
   color: #FFFFFF;
-  font-size: 35px;
+  font-size: clamp(13px, 2.2vw, 35px);
   position: absolute;
   bottom: -25px;
+  text-align: center;
+  width: 100%;
 }
 
 .infoSection {
@@ -55,7 +55,8 @@
 }
 
 .smallText {
-  font-size: 30px;
+  text-align: center;
+  font-size: clamp(20px, 2vw, 30px);
   font-family: "Orbitron", sans-serif;
   color: #FFFFFF;
 }
@@ -71,13 +72,3 @@
   justify-content: center;
   color: #005C71;
 }
-
-/*======================================*/
-/* adaptive */
-/*======================================*/
-
-@media (max-width: 1024px) { }
-
-@media (max-width: 600px) { }
-
-@media (max-width: 400px) { }

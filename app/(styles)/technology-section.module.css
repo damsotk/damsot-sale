@@ -1,23 +1,75 @@
+.technlogySection {
+    margin-top: 250px;
+}
+
+.technologiesText {
+    color: #9BD0D3;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-family: "Orbitron", sans-serif;
+}
+
+
 .cardTechnologiesSection {
     display: flex;
-    margin-top: 200px;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
-    /* background-color: red; */
 }
 
 .cardTechnology {
-    width: 110px;
-    height: 110px;
+    flex: 1 1 clamp(80px, 30%, 120px);
+    height: 160px;
     padding: 20px;
     border: 1px solid #9BD0D3;
-    border-radius: 35;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    position: relative;
+    overflow: hidden;
 }
 
-.technologyName, .technologyDuration {
+.cardTechnology::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #9BD0D3;
+    border-radius: 50%;
+    filter: blur(75px);
+    z-index: -1;
+}
+
+.cardTechnology:nth-child(1)::after {
+    bottom: 40px;
+    left: 10px;
+}
+
+.cardTechnology:nth-child(2)::after {
+    right: -20px;
+    bottom: 40px;
+}
+
+.cardTechnology:nth-child(3)::after {
+    right: -20px;
+    top: 10px;
+}
+
+.cardTechnology:nth-child(4)::after {
+    left: -20px;
+    top: 10px;
+}
+
+.cardTechnology:nth-child(5)::after {
+    left: -20px;
+    top: 0px;
+}
+
+.technologyName,
+.technologyDuration {
     color: #9BD0D3;
     font-weight: bolder;
     font-family: "Orbitron", sans-serif;
@@ -28,13 +80,16 @@
     justify-content: center;
     gap: 10px;
 }
-.paginationButton, .paginationButtonActive {
+
+.paginationButton,
+.paginationButtonActive {
     background-color: #2C393A;
     width: 15px;
     height: 15px;
     border-radius: 100%;
     margin-top: 20px;
 }
+
 .paginationButtonActive {
     background-color: #9BD0D3;
 }

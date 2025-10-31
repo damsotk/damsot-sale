@@ -7,7 +7,8 @@ export default function TechnologySection() {
     const { page, visibleItems, goToPage } = usePagination(technologies, 5)
 
     return (
-        <div>
+        <div className={styles.technlogySection}>
+            <div className={styles.technologiesText}>My technology stack</div>
             <div className={styles.cardTechnologiesSection}>
                 {visibleItems.map((tech, index) => (
                     <div key={index} className={styles.cardTechnology}>

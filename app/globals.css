@@ -2,5 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 body {
-    background-color: #11120D;
+  background-color: #11120D;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 clamp(16px, 8vw, 240px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

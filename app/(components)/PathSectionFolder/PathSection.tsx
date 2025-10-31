@@ -7,7 +7,8 @@ import styles from '@/app/(styles)/path-section.module.css'
 export default function PathSection() {
     const { page, visibleItems, goToPage } = usePagination(history, 1)
     return (
-        <div className={styles.pathFlex}>
+        <div className={styles.pathSection}>
+            <div className={styles.pathText}>Unfinished <span style={{color: "#005C71"}}>path</span></div>
             {visibleItems.map((pathPage, index) => (
                 <PathCard key={index} data={pathPage} />
             ))}
